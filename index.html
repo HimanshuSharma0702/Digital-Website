@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Channels</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#instructions">Instructions</a></li>
+    </ul>
+  </nav>
+
+
+
+  <!-- Home Section -->
+  <section id="home" class="section active">
+    <div class="container">
+      <h1>Digital Marketing Channels Effectiveness</h1>
+      <form id="dataForm">
+        <label for="channel">Channel:</label>
+        <input type="text" id="channel" placeholder="Enter channel name" required>
+        
+        <label for="effectiveness">Effectiveness (%):</label>
+        <input type="number" id="effectiveness" placeholder="Enter effectiveness" min="0" max="100" required>
+        
+        <button type="submit">Add Data</button>
+      </form>
+
+      <div class="chart-container">
+        <canvas id="marketingChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>We are student of Amity University Patna, Course- BCA (b) from batch 2022-25</p>
+      <p>Meet our team:</p>
+      <ul>
+        <li>Deepak Kumar (A45304822061)</li>
+        <li>Himanshu Sharma (A45304822059)</li>
+        <li>Harsh Kumar (A45304822055)</li>
+        <li>Sumit Kumar (A45304822054)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Instructions Section -->
+  <section id="instructions" class="section">
+    <div class="container">
+      <h1>Instructions</h1>
+      <p>How to use this website:</p>
+      <ol>
+        <li>Add/Select channels like:
+          <ul>
+            <li>SEO</li>
+            <li>Emails</li>
+            <li>Social Media Marketing</li>
+            <li>Content Marketing</li>
+            <li>Affiliate Marketing</li>
+            <li>Video Marketing</li>
+            <li>Influencer Marketing</li>
+            <li>Mobile Marketing</li>
+          </ul>
+        </li>
+        <li>Add their effectiveness (a percentage value between 0 and 100).</li>
+        <li>Click "Add Data" to see the graph update dynamically.</li>
+      </ol>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
